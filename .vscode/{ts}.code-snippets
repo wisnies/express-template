@@ -1,0 +1,28 @@
+{
+  "Async Express Controller function": {
+    "prefix": "aecf",
+    "body": [
+      "async (req: Request, res: Response, next: NextFunction): Promise<Response | void> => {",
+      "   try{",
+      "       $1",
+      "   } catch(err: any) {",
+      "       next(new HttpException(err.status, err.message));",
+      "   }",
+      "}"
+    ],
+    "description": "Arrow function with typed express args - used in controllers"
+  },
+  "Async Express Service function": {
+    "prefix": "aesf",
+    "body": [
+      "public async $1($2): Promise<$3> => {",
+      "   try{",
+      "       $4",
+      "   } catch(err: any) {",
+      "       next(new HttpException(err.status, err.message));",
+      "   }",
+      "}"
+    ],
+    "description": "Named async function - used in services"
+  }
+}

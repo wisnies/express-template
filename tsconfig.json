@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "baseUrl": "./src",
+    "paths": {
+      "$middleware/*": ["middleware/*"],
+      "$entities/*": ["entities/*"],
+      "$libs/*": ["libs/*"],
+      "$utils/*": ["utils/*"]
+    },
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true /* Specify the base directory to resolve non-relative module names. */
+  },
+  "exclude": ["node_modules", "dist", "scripts", ".vscode"]
+}
